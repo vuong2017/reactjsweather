@@ -1,0 +1,26 @@
+.InfoTemp7day{
+  text-align: center;
+}
+.InfoTemp7day a{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  margin: 5px 5px;
+}
+.InfoTemp7day_Info{
+  border:1px solid rgb(194, 198, 198);
+  border-radius:5px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.InfoTemp7day a:first-child{
+  background-color: rgb(194, 198, 198);
+  border-radius:5px;
+}
+.InfoTemp7day_Info_Icon img{
+  width: 100%;
+  height: 100%;
+}

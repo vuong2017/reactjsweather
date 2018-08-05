@@ -1,0 +1,28 @@
+.InfoTemp{
+  padding: 10px 30px;
+}
+.InfoTemp_Temp{
+  display: flex;
+  border:1px solid rgb(247, 244, 244);
+  background-color: rgb(247, 249, 249);
+  border-radius:5px;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.InfoTemp_Temp_Icon img{
+  width: 100%;
+  height: 100%;
+}
+
+.InfoTemp_Temp_Temp span{
+  font-size: 45px;
+}
+.InfoTemp_description{
+  border:1px solid rgb(247, 244, 244);
+  background-color: rgb(247, 249, 249);
+  border-radius:5px;
+  padding: 10px;
+}

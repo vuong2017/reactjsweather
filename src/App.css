@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+}
+.main{
+  border:1px solid rgb(247, 244, 244);
+  padding: 20px;
+  box-shadow:20px 20px 50px grey;
+}
