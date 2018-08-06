@@ -1,5 +1,5 @@
 import React , {Component} from 'react';
-import {GetDataOtherday} from '../../Redux/Actioncreators';
+import {actionCreators} from '../../Redux/Actioncreators';
 import {connect} from 'react-redux';
 import api from "../../api/api";
 import PropTypes from 'prop-types';
@@ -19,14 +19,14 @@ class ItemList7day extends Component{
     }
   }
   onClick = (e,i,item)=>{
-    const {data} = this.props;
+    const {data,actionCreators} = this.props;
     data.map((e,i)=>{
       return this[i].style.background="unset";
     })
     this[i].style.backgroundColor="rgb(194, 198, 198)";
     this[i].style.borderRadius="5px";
     const day = new Date(item.dt * 1000);
-    this.props.GetDataOtherday(i,api.weather.getDay(day.getDay()));
+    actionCreators.GetDataOtherday(i,api.weather.getDay(day.getDay()));
   }
   renderListItemTemp = ()=>{
     const {data} = this.props;
@@ -66,4 +66,4 @@ class ItemList7day extends Component{
 ItemList7day.propsTypes = {
   data:PropTypes.array.isRequired
 }
-export default connect(null,{GetDataOtherday})(ItemList7day);
+export default connect(null,{actionCreators})(ItemList7day);

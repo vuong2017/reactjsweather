@@ -3,7 +3,6 @@ import InfoTemp from './Components/InfoTemp';
 import InfoWeather from './Components/InfoWeather';
 import InfoTemp7day from './Components/InfoTemp7day';
 import PropTypes from 'prop-types';
-// import {RequestApiWeather,GetWeatherCurrent} from './Redux/Actioncreators';
 import {connect} from 'react-redux';
 import './App.css';
 class App extends Component{
