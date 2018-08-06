@@ -1,5 +1,6 @@
 import React , {Component} from 'react';
 import '../styles/InfoTemp.css';
+import PropTypes from 'prop-types';
 class InfoTemp extends Component{
   render(){
     const {data} = this.props;
@@ -35,5 +36,8 @@ class InfoTemp extends Component{
       </div>
     );
   }
+}
+InfoTemp.propTypes = {
+  data:PropTypes.object.isRequired
 }
 export default InfoTemp;

@@ -1,4 +1,5 @@
 import React , {Component} from 'react';
+import PropTypes from 'prop-types';
 class InfoWeather extends Component{
   render(){
     const {data} = this.props;
@@ -22,5 +23,8 @@ class InfoWeather extends Component{
         </div>
     );
   }
+}
+InfoWeather.propTypes = {
+  data:PropTypes.object.isRequired
 }
 export default InfoWeather;

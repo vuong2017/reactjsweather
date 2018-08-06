@@ -1,7 +1,7 @@
 import {combineReducers} from 'redux';
 import * as types from "../types/types";
 const initState = {
-  data:null,
+  data:{},
   isLoading:true
 }
 const weather = (state=initState,action={})=>{

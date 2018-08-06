@@ -2,6 +2,7 @@ import React , {Component} from 'react';
 import {GetDataOtherday} from '../../Redux/Actioncreators';
 import {connect} from 'react-redux';
 import api from "../../api/api";
+import PropTypes from 'prop-types';
 class ItemList7day extends Component{
   getDay = (day)=>{
     var d = new Date(day * 1000);
@@ -61,5 +62,8 @@ class ItemList7day extends Component{
       this.renderListItemTemp()
     );
   }
+}
+ItemList7day.propsTypes = {
+  data:PropTypes.array.isRequired
 }
 export default connect(null,{GetDataOtherday})(ItemList7day);

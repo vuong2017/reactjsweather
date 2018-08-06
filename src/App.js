@@ -2,6 +2,7 @@ import React ,{Component} from 'react';
 import InfoTemp from './Components/InfoTemp';
 import InfoWeather from './Components/InfoWeather';
 import InfoTemp7day from './Components/InfoTemp7day';
+import PropTypes from 'prop-types';
 // import {RequestApiWeather,GetWeatherCurrent} from './Redux/Actioncreators';
 import {connect} from 'react-redux';
 import './App.css';
@@ -23,6 +24,13 @@ class App extends Component{
       );
     }
   }
+}
+App.propTypes  = {
+  data: PropTypes.shape({
+    datacurrent:PropTypes.object,
+    list:PropTypes.array
+  }).isRequired,
+  isLoading:PropTypes.bool.isRequired
 }
 function mapStateToProps(state){
   return{
